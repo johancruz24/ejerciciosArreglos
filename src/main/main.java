@@ -5,6 +5,7 @@
  */
 package main;
 
+import java.util.Arrays;
 /**
  *
  * @author CruzArdila
@@ -14,6 +15,7 @@ public class main {
     /**
      * @param args the command line arguments
      */
+    @SuppressWarnings("empty-statement")
     public static void main(String[] args) {
         // TODO code application logic here
         //Crear un arreglo cual nos permita almacenar cien números enteros.
@@ -25,12 +27,34 @@ public class main {
         //Random para el arreglo
         int numeros = (int)(Math.random() * 100);
         
-        System.out.println(numeros);
+        enteros[numero]=numeros;
+        System.out.print(numeros + ";");
         
         
+    }
+        System.out.println("");
+    
+        int mayor = 0;
+        for(int i = 0; i < enteros.length; i++){
+        
+       
+        if(enteros[i] > mayor){
+        
+            mayor = enteros[i];
         }
         
         
     }
+        System.out.println("El numero mayor del arreglo es " +mayor);
+    
+       
+         
+        
+    
+    
+    } 
+       
+    
+    
     
 }
