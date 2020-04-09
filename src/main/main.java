@@ -34,6 +34,7 @@ public class main {
     }
         System.out.println("");
     
+        //Calcular el número mayor del arreglo
         int mayor = 0;
         for(int i = 0; i < enteros.length; i++){
         
