@@ -25,7 +25,7 @@ public class main {
         for(int numero = 0; numero < enteros.length; numero++ ){
         
         //Random para el arreglo
-        int numeros = (int)(Math.random() * 100);
+        int numeros = (int)(Math.random() * 101);
         
         enteros[numero]=numeros;
         System.out.print(numeros + ";");
@@ -48,7 +48,19 @@ public class main {
     }
         System.out.println("El numero mayor del arreglo es " +mayor);
     
-       
+        //Calcular número mayor del arreglo
+        int menor = mayor;
+    
+        for(int i = 0; i < enteros.length; i++){
+        
+            if(enteros[i]<menor){
+            
+                menor = enteros[i];
+        
+            }
+    
+        }
+        System.out.println("El número menor del arreglo es "+menor);
          
         
     
