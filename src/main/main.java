@@ -22,6 +22,7 @@ public class main {
         
         for(int numero = 0; numero < enteros.length; numero++ ){
         
+        //Random para el arreglo
         int numeros = (int)(Math.random() * 100);
         
         System.out.println(numeros);
