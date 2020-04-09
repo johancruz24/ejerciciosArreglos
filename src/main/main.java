@@ -48,7 +48,7 @@ public class main {
     }
         System.out.println("El numero mayor del arreglo es " +mayor);
     
-        //Calcular número mayor del arreglo
+        //Calcular número menor del arreglo
         int menor = mayor;
     
         for(int i = 0; i < enteros.length; i++){
