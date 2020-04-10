@@ -5,7 +5,7 @@
  */
 package main;
 
-import java.util.Arrays;
+
 /**
  *
  * @author CruzArdila
@@ -51,20 +51,38 @@ public class main {
         //Calcular número menor del arreglo
         int menor = mayor;
     
-        for(int i = 0; i < enteros.length; i++){
+        for(int j = 0; j < enteros.length; j++){
         
-            if(enteros[i]<menor){
+            if(enteros[j]<menor){
             
-                menor = enteros[i];
+                menor = enteros[j];
         
             }
     
         }
         System.out.println("El número menor del arreglo es "+menor);
-         
         
-    
-    
+        
+        
+       
+         
+        for(int entero : enteros){
+        int aux=0;  
+        for(int a=1; a <= entero; a++){
+         
+        if(entero % a == 0){
+            
+            aux++;
+        }
+        }
+        if(aux == 2){
+            System.out.println("Número primo " +entero);
+        }
+        
+        }
+        
+        
+        
     } 
        
     
