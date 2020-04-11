@@ -152,6 +152,16 @@ public class main {
     System.out.println("");
     System.out.println("/***********************************************************/");
     
+    int cien = 0;
+    for(int entero: enteros){
+        if(entero == 100){
+            cien++;
+        }
+    }
+    System.out.println("/***********************************************************/");
+    System.out.print("Existen cien " +cien+ " veces en el arreglo");
+    System.out.println("");
+    System.out.println("/************************FIN********************************/");
     }    
 }
 
