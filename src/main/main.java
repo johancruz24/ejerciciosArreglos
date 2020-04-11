@@ -92,19 +92,22 @@ public class main {
         
         }
         
-       /* int pos[] = new int[100];
+    
         
-    for(int o = 0; o < enteros.length;o++){
-        int min = o;      
-       
-       for(int k = 0; k < enteros.length;k++){
-           
-           
-       
+    for(int o = 0; o < (enteros.length-1);o++){          
+       for(int k = 0; k <(enteros.length-1);k++){
+           if(enteros[k]>enteros[k+1]){
+               int aux = enteros[k];
+               enteros[k] = enteros[k+1];
+               enteros[k+1] = aux;
+               
+           }       
        }
-        
-        }
-      */  
+       
+    }
+    for(int entero : enteros){
+    System.out.print(entero+"-");
+    }  
         
         
         
