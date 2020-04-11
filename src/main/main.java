@@ -81,6 +81,33 @@ public class main {
         
         }
         
+        for(int entero : enteros){
+            
+            if(entero % 2 == 0){
+            
+            System.out.println("El numero " +entero+ " es par.");
+            }
+            
+        
+        
+        }
+        
+       /* int pos[] = new int[100];
+        
+    for(int o = 0; o < enteros.length;o++){
+        int min = o;      
+       
+       for(int k = 0; k < enteros.length;k++){
+           
+           
+       
+       }
+        
+        }
+      */  
+        
+        
+        
         
         
     } 
