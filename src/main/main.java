@@ -45,9 +45,10 @@ public class main {
         }
         
         
-    }
+    }   
+        System.out.println("/***********************************************************/");
         System.out.println("El numero mayor del arreglo es " +mayor);
-    
+        System.out.println("/***********************************************************/");
         //Calcular número menor del arreglo
         int menor = mayor;
     
@@ -60,12 +61,13 @@ public class main {
             }
     
         }
+        System.out.println("/***********************************************************/");
         System.out.println("El número menor del arreglo es "+menor);
+        System.out.println("/***********************************************************/");
         
         
-        
-       
-         
+        int cont=0;
+        int primos[] = new int[50]; 
         for(int entero : enteros){
         int aux=0;  
         for(int a=1; a <= entero; a++){
@@ -76,22 +78,39 @@ public class main {
         }
         }
         if(aux == 2){
-            System.out.println("Número primo " +entero);
+            
+            primos[cont]=entero;
+            cont++;
+           
         }
         
         }
+        System.out.println("/***********************************************************/");
+        System.out.println("Los número primos del arreglo son " );
+        for(int primo : primos){
         
-        for(int entero : enteros){
-            
-            if(entero % 2 == 0){
-            
-            System.out.println("El numero " +entero+ " es par.");
-            }
-            
-        
-        
+         System.out.print(+primo+ "-");
         }
+        System.out.println("");
+        System.out.println("/***********************************************************/");
         
+        
+        int contPar=0;
+        int pares[] = new int[100];
+        for(int entero : enteros){            
+            if(entero % 2 == 0){                
+                pares[contPar]=entero;
+                contPar++;            
+                      }       
+        }
+        System.out.println("/***********************************************************/");
+        System.out.println("Los números pares del arreglo son: ");
+        for(int par:pares){
+        
+            System.out.print(+par+ ",");
+        }
+        System.out.println("");
+        System.out.println("/***********************************************************/");
     
         
     for(int o = 0; o < (enteros.length-1);o++){          
@@ -105,17 +124,19 @@ public class main {
        }
        
     }
+    System.out.println("/***********************************************************/");
+    System.out.println("El arreglo ordenado es : ");
     for(int entero : enteros){
     System.out.print(entero+"-");
-    }  
-        
-        
-        
-        
-        
-    } 
-       
+    }
+    System.out.println("");
+        System.out.println("/***********************************************************/");    
     
-    
-    
+        
+    for(int entero : enteros){
+        System.out.print(entero);
+    }
+    }    
 }
+
+
