@@ -112,13 +112,14 @@ public class main {
         System.out.println("");
         System.out.println("/***********************************************************/");
     
-        
-    for(int o = 0; o < (enteros.length-1);o++){          
-       for(int k = 0; k <(enteros.length-1);k++){
-           if(enteros[k]>enteros[k+1]){
-               int aux = enteros[k];
-               enteros[k] = enteros[k+1];
-               enteros[k+1] = aux;
+    int ordenAsc[] = new int[100];
+        System.arraycopy(enteros, 0, ordenAsc, 0, enteros.length);
+    for(int o = 0; o < (ordenAsc.length-1);o++){          
+       for(int k = 0; k <(ordenAsc.length-1);k++){
+           if(ordenAsc[k]>ordenAsc[k+1]){
+               int aux = ordenAsc[k];
+               ordenAsc[k] = ordenAsc[k+1];
+               ordenAsc[k+1] = aux;
                
            }       
        }
@@ -126,16 +127,31 @@ public class main {
     }
     System.out.println("/***********************************************************/");
     System.out.println("El arreglo ordenado es : ");
-    for(int entero : enteros){
-    System.out.print(entero+"-");
+    for(int orden : ordenAsc){
+    System.out.print(orden+"-");
     }
     System.out.println("");
         System.out.println("/***********************************************************/");    
     
-        
-    for(int entero : enteros){
-        System.out.print(entero);
+    int suma = 0;   
+    for(int b = 0; b < enteros.length; b++){
+        suma = suma + enteros[b];
     }
+    
+    float  promedio = suma/100;
+    System.out.println("/***********************************************************/");
+    System.out.println("El promedio del arreglo es : ");
+    System.out.printf("%.2f", +promedio);
+    System.out.println("");
+    System.out.println("/***********************************************************/");
+    
+    int adicion = enteros[0] + enteros[99];
+    System.out.println("/***********************************************************/");
+    System.out.println("La suma del primero y el ultimo elemento del arreglo es : ");
+    System.out.print(adicion);
+    System.out.println("");
+    System.out.println("/***********************************************************/");
+    
     }    
 }
 
